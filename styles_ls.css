@@ -38,9 +38,16 @@ div.groupitem {
 .imagesize {
   max-width: 400px;
 }
-.signin {
-  font-family: sans-serif;
-  background-color: #ffffff;
-  width: 80%;
-  padding: 20px;
+#passwordpadding {
+  padding-left: 3px;
+}
+.toggleBtnStyle {
+  background-color: #ffdc00;
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 2px;
+  color: white;
+}
+#logBtnContainer {
+  padding-top: 10px;
+  padding-left: 10px;
 }
