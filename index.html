@@ -4,11 +4,16 @@
     <link rel="stylesheet" href="styles_ls.css">
     <script type="text/javascript" src="lsJavascript.js"></script>
     <link rel="icon" type="image/png" href="final_lemonadestand_logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Oxygen" rel="stylesheet">
   </head>
   <body>
+<!--- Tile images for storefronts --->
     <ul class="tilegrid">
       <li class="storetile">
-        <a href="storefront.html">
+        <a href="examplecompany_ls.html">
         <div class="groupitem">
           <div class="companytile">
             <p class="caption">Example Company</p>
@@ -42,20 +47,40 @@
 
       </li>
     </ul>
+    <!-- Button trigger modal -->
+    <div id="logBtnContainer">
+      <button class="toggleBtnStyle" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Login
+      </button>
+    </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" class="titleStyle" id="exampleModalLabel">Login to Lemonade Stand</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+            <label>Username</label>
+            <input name="username" type="text" placeholder="*required" required/>
+            <br />
+            <label id="passwordpadding">Password</label>
+            <input type="password" placeholder="*required" required />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+  </div>
 
+<!--- Logo/title --->
     <div class="headerimage">
       <img src="final_lemonadestand_logo.jpg" class="imagesize">
     </div>
-      <form>
-        <div class="signin">
-          <label>Username</label>
-          <input name="username" type="text" placeholder="*required" required/>
-          <label>Password</label>
-          <input type="password" placeholder="*required" required />
-          <button>Submit</button>
-        </div>
-      </form>
-    </div>
   </body>
 </html>
+
