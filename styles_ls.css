@@ -1,0 +1,46 @@
+.headerimage {
+  text-align: center;
+}
+ul.tilegrid {
+  list-style-type: none;
+  display: inline;
+}
+p.caption {
+  visibility: hidden;
+  color: black;
+}
+.groupitem .companytile:hover {
+  opacity: 0.5;
+}
+.groupitem:hover .caption {
+    visibility: visible;
+}
+
+
+div.groupitem {
+    display: table;
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+.groupitem .companytile {
+    border: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url(IMG_0842.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+
+.imagesize {
+  max-width: 400px;
+}
+.signin {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  width: 80%;
+  padding: 20px;
+}
