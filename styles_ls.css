@@ -4,39 +4,72 @@
 ul.tilegrid {
   list-style-type: none;
   display: inline;
+  padding-inline-start: 0px;
 }
 p.caption {
   visibility: hidden;
   color: black;
 }
 .groupitem .companytile:hover {
-  opacity: 0.5;
+  opacity: 0.25;
+
 }
 .groupitem:hover .caption {
     visibility: visible;
 }
 
-
 div.groupitem {
     display: table;
     float: left;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
     position: relative;
 }
 .groupitem .companytile {
-    border: none;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    background-image: url(IMG_0842.JPG);
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+    background-position: center;
+    background-size: contain;
+    width: 265px;
+    height: 215px;
+    border-style: solid;
+    border-color: #ffdc00;
 }
-
+.groupitem .storeimages {
+  display: table-cell;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 200px;
+  border-style: solid;
+}
+#firstTile {
+  background-image: url(hivejournallogo.jpg)
+}
+#secondTile {
+  background-image: url(hellofridaybanner.jpg)
+}
+#thirdTile {
+  background-image: url(Cakerylogo.jpg);
+}
+#fourthTile {
+  background-image: url(minteenlogo.jpg);
+}
+#firstImage {
+  background-image: url(lustrouslipglossshopify.jpg);
+}
+#secondImage {
+  background-image: url(lipstickshopify.jpg);
+}
+#thirdImage {
+  background-image: url(eyeshadowshopify.jpg);
+}
 .imagesize {
   max-width: 400px;
+  padding: 20px;
 }
 #passwordpadding {
   padding-left: 3px;
@@ -50,4 +83,64 @@ div.groupitem {
 #logBtnContainer {
   padding-top: 10px;
   padding-left: 10px;
+}
+.navlist {
+  list-style-type: none;
+  border-style: solid;
+  border-color: #ffdc00;
+  width: 150px;
+  height: 500px;;
+  background-image: url(lemonadeDoodle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar {
+  text-align: center;
+  margin-left: 12px;
+}
+.navbarlinks {
+  color: white;
+  background-color: #ffdc00;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 40px;
+}
+.storepage {
+  text-align: center;
+  align-items: center;
+  font-family: 'Oxygen', sans-serif;
+}
+.storebannersize {
+  max-width: 400px;
+  align-items: center;
+}
+.storetile {
+  display: inline;
+}
+.tile {
+  text-align: center;
+}
+.footerimage {
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    text-align: center;
+}
+.footerimage img{
+     display: block;
+     position: relative;
+     margin: auto;
+     max-width: 200px;
+}
+.imagelist {
+  text-align: center;
+  display: inline;
+}
+.faqs {
+  list-style-position: inside;
+  text-align: center;
+}
+.aboutText {
+  max-width: 500px;
+  text-align: center;
+  display: inline-block;
 }
