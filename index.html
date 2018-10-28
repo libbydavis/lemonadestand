@@ -13,9 +13,27 @@
 <!--- Tile images for storefronts --->
     <ul class="tilegrid">
       <li class="storetile">
+        <div class="groupitem navbar">
+            <ul class="navlist">
+              <li>
+              <!-- Button trigger modal -->
+                <div id="logBtnContainer">
+                  <button type="button" class="toggleBtnStyle btn" data-toggle="modal" data-target="#exampleModal">
+                    Login
+                  </button>
+                </div>
+              </li>
+              <li><a href="help_ls.html" class="navbarlinks btn">Help</a></li>
+              <li><a href="about_ls.html" class="navbarlinks btn">About</a></li>
+            </ul>
+          </div>
+
+      </li>
+      <li class="storetile">
         <a href="examplecompany_ls.html">
         <div class="groupitem">
-          <div class="companytile">
+          <div class="companytile" id="firstTile"></div>
+          <div style="z-index: 100; top: 100px; left: 0; width: 250px; position: absolute; text-align: center">
             <p class="caption">Example Company</p>
           </div>
         </div>
@@ -23,43 +41,45 @@
 
       </li>
       <li class="storetile">
+        <a href="examplecompany_ls.html">
         <div class="groupitem">
-          <div class="companytile">
+          <div class="companytile" id="secondTile"></div>
+          <div style="z-index: 100; top: 100px; left: 0; width: 250px; position: absolute; text-align: center">
             <p class="caption">Example Company</p>
-          </div>
         </div>
+      </div>
+        </a>
 
       </li>
       <li class="storetile">
+        <a href="examplecompany_ls.html">
         <div class="groupitem">
-          <div class="companytile">
+          <div class="companytile" id="thirdTile"></div>
+          <div style="z-index: 100; top: 100px; left: 0; width: 250px; position: absolute; text-align: center">
             <p class="caption">Example Company</p>
           </div>
         </div>
+        </a>
 
       </li>
       <li class="storetile">
+        <a href="examplecompany_ls.html">
         <div class="groupitem">
-          <div class="companytile">
+          <div class="companytile" id="fourthTile"></div>
+          <div style="z-index: 100; top: 100px; left: 0; width: 250px; position: absolute; text-align: center">
             <p class="caption">Example Company</p>
           </div>
         </div>
+        </a>
 
       </li>
     </ul>
-    <!-- Button trigger modal -->
-    <div id="logBtnContainer">
-      <button class="toggleBtnStyle" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Login
-      </button>
-    </div>
-
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" class="titleStyle" id="exampleModalLabel">Login to Lemonade Stand</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Login to Lemonade Stand</h5>
       </div>
       <div class="modal-body">
         <form>
@@ -71,7 +91,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="toggleBtnStyle btn" onclick="" data-dismiss="modal">Submit</button>
       </div>
     </div>
   </div>
@@ -83,4 +103,3 @@
     </div>
   </body>
 </html>
-
